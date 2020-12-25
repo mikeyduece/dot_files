@@ -126,7 +126,7 @@ function cs () {
 }
 
 function mdc () {
-  mdkir "$@" && cd "$@"
+  mkdir "$@" && cd "$@"
 }
 alias push='git push origin $(current_branch)'
 
@@ -134,5 +134,4 @@ alias pull='git pull origin $(current_branch)'
 
 prompt_context(){}
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+. /usr/local/opt/asdf/asdf.sh
